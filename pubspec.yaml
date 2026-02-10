@@ -1,0 +1,36 @@
+name: approov_service_flutter_httpclient
+description: Approov enabled HttpClient
+version: 3.5.8
+repository: https://github.com/approov/approov-service-flutter-httpclient
+homepage: https://pub.dev/publishers/approov.io/packages
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.7.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  asn1lib: ^1.5.2
+  crypto: ^3.0.3
+  enum_to_string: ^2.0.1
+  http: ^1.2.1
+  logger: ^2.0.2
+  pem: ^2.0.5
+  shared_preferences: ^2.2.2
+  mutex: ^3.1.0
+  collection: ^1.15.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.criticalblue.approov_service_flutter_httpclient
+        pluginClass: ApproovHttpClientPlugin
+      ios:
+        pluginClass: ApproovHttpClientPlugin
